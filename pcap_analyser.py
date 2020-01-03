@@ -152,18 +152,19 @@ def parse_pcap():
         for uri in set(image_uris):
             print(f'URI: {uri}\nFilename: {os.path.basename(os.path.normpath(uri))}\n')
 
-    print('\n- PACKET INFO ----------------------------------------')
-    if tcp_count != 0:
-        mean_tcp_len = round(total_tcp_len/tcp_count)
-        print(f'\nTCP packets: {tcp_count}\nMean lenght: {mean_tcp_len}\nFirst timestamp: {first_tcp_ts}\nLast timestamp: {last_tcp_ts}\n')
-    elif udp_count != 0:
-        mean_udp_len = round(total_udp_len/udp_count)
-        print(f'UDP packets: {udp_count}\nMean lenght: {mean_udp_len}\nFirst timestamp: {first_udp_ts}\nLast timestamp: {last_udp_ts}\n')
-    elif igmp_count != 0:
-        mean_igmp_len = round(total_igmp_len/igmp_count)
-        print(f'IGMP packets: {igmp_count}\nMean lenght: {mean_igmp_len}\nFirst timestamp: {first_igmp_ts}\nLast timestamp: {last_igmp_ts}\n')
-    else:
+    if tcp_count == 0 and udp_count == 0 and igmp_count == 0:
         print('\n- NO TCP/UDP/IGMP PACKETS FOUND ----------------------------------------')
+    else:
+        print('\n- PACKET INFO ----------------------------------------')
+        if tcp_count != 0:
+            mean_tcp_len = round(total_tcp_len/tcp_count)
+            print(f'\nTCP packets: {tcp_count}\nMean lenght: {mean_tcp_len}\nFirst timestamp: {first_tcp_ts}\nLast timestamp: {last_tcp_ts}\n')
+        if udp_count != 0:
+            mean_udp_len = round(total_udp_len/udp_count)
+            print(f'UDP packets: {udp_count}\nMean lenght: {mean_udp_len}\nFirst timestamp: {first_udp_ts}\nLast timestamp: {last_udp_ts}\n')
+        if igmp_count != 0:
+            mean_igmp_len = round(total_igmp_len/igmp_count)
+            print(f'IGMP packets: {igmp_count}\nMean lenght: {mean_igmp_len}\nFirst timestamp: {first_igmp_ts}\nLast timestamp: {last_igmp_ts}\n')
 
     #CALL OTHER FUNCTIONS
     print('\n- CREATING "results" DIRECTORY... ----------------------------------------')
