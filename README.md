@@ -22,6 +22,9 @@ https://matplotlib.org/contents.html
 
 **networkx** - network graph\
 https://networkx.github.io/documentation/stable
-
+## Usage
+Run
+`./main.py`
+When prompted, paste path to geoip2 database
 ## To do
 1. Separate packet analysis into functions & support diffrent "modes" of parsing (if user doesn't want all features extracted)
