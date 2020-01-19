@@ -11,17 +11,17 @@ Python program for network traffic analysis and visualisation. Extracts followin
 https://dpkt.readthedocs.io/en/latest/
 \
 
-**geoip2** - geolocation database lookup for extracted IPs\
-https://geoip2.readthedocs.io/en/latest/\
-https://dev.maxmind.com/geoip/geoip2/geolite2/ <- database\
+**geoip2** - geolocation database lookup for extracted IPs
+https://geoip2.readthedocs.io/en/latest/
+https://dev.maxmind.com/geoip/geoip2/geolite2/ <- database
 
-**simplekml** - kml file creation\
-https://simplekml.readthedocs.io/en/latest/\
+**simplekml** - kml file creation
+https://simplekml.readthedocs.io/en/latest/
 \
 
-**matplotlib** - traffic plot\
-https://matplotlib.org/contents.html\
+**matplotlib** - traffic plot
+https://matplotlib.org/contents.html
 \
 
-**networkx** - network graph\
-https://networkx.github.io/documentation/stable/
+**networkx** - network graph
+https://networkx.github.io/documentation/stable
