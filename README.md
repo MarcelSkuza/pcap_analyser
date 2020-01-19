@@ -10,10 +10,10 @@ Python program for network traffic analysis and visualisation. Extracts followin
 **dpkt** - pcap parsing and decapsulation\
 https://dpkt.readthedocs.io/en/latest/\
 \
+
 **geoip2** - geolocation database lookup for extracted IPs\
 https://geoip2.readthedocs.io/en/latest/\
 https://dev.maxmind.com/geoip/geoip2/geolite2/ <- database\
-\
 
 **simplekml** - kml file creation\
 https://simplekml.readthedocs.io/en/latest/\
