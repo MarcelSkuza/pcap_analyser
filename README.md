@@ -6,9 +6,9 @@ Python program for network traffic analysis and visualisation. Extracts followin
 - Pakcet type, count & mean lenght
 
 ## Prerequsites & install
-#### Libraries
-**dpkt** - pcap parsing and decapsulation\
-https://dpkt.readthedocs.io/en/latest/\
+### Libraries
+**dpkt** - pcap parsing and decapsulation
+https://dpkt.readthedocs.io/en/latest/
 \
 
 **geoip2** - geolocation database lookup for extracted IPs\
